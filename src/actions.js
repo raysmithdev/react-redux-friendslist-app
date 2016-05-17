@@ -9,3 +9,13 @@ export const addFriend = (name) => {
     }
   };
 }
+
+export const onDelete = (id) => {
+  console.log(id);
+  return {
+    type: 'REMOVE_FRIEND',
+    payload: {
+      id: id
+    }
+  };
+}

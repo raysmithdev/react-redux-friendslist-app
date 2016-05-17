@@ -1,6 +1,6 @@
 #React & Redux FriendsList App
 
-A demo app utilising React & Redux to build a simple friends list app
+A demo app utilising React & Redux to build a simple friends list app.
 
 # Tech Stack
 - React JS

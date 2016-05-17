@@ -4,18 +4,21 @@ import ContentInbox from 'material-ui/svg-icons/content/inbox';
 import ActionGrade from 'material-ui/svg-icons/action/grade';
 import ContentSend from 'material-ui/svg-icons/content/send';
 import ContentDrafts from 'material-ui/svg-icons/content/drafts';
-import ActionInfo from 'material-ui/svg-icons/action/info';
 import TextField from 'material-ui/TextField';
 import Styles from './style.css';
 
 
 export const Friend = (props) => {
-  const { friend } = props;
+  const { friend, onDelete } = props;
+
+  const onRemove = (id) => {
+    console.log(id);
+  };
 
   return (
     <div>
       <List>
-         <ListItem primaryText={friend.name} rightIcon={<ActionInfo />} />
+         <ListItem primaryText={friend.name} />
        </List>
     </div>
   );
